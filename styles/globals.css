@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
+* {
   transition: .3s;
+}
+
+.glow-cyan {
+  box-shadow: 0 0 100px cyan;
 }
