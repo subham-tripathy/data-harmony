@@ -51,9 +51,7 @@ const signup = () => {
                 }
 
 
-                let optpass = false
                 let otp
-                // console.log('this is fetchingotp');
                 fetch('/api/sendOTP?email=' + cmail).then(res => res.json()).then(data => {
                     otp = data.otp
                     document.querySelector('#optverifiation').classList.remove('hidden')

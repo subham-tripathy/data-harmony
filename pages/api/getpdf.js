@@ -13,7 +13,6 @@ export default function handler(req, res) {
         }
 
         const pdfData = result[0].CompanyCertificate; // Assuming 'CompanyCertificate' is the column name
-        res.setHeader('Content-Type', 'application/pdf');
         res.send(pdfData);
     });
 }

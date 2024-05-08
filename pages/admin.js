@@ -93,7 +93,7 @@ const admin = () => {
                             const url = window.URL.createObjectURL(blob);
                             const a = document.createElement('a');
                             a.href = url;
-                            a.download = 'file.pdf';
+                            a.download = 'file.mp4';
                             a.textContent = 'Download Certificate'
                             certificate.appendChild(a);
                         })
